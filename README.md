@@ -29,7 +29,7 @@ Then go to tt-rss preferences and enable the plugin.
 
 Current status
 --------------
-This version of the plugin is fully working: Marking articles as read and unread works correctly. Also the unread status is reflected correctly when it gets changes by other means (like clicking in the article, mark all as read, mark-as-read from the context menu).
+This version of the plugin is fully working: Marking articles as read and unread works correctly. Also the unread status is reflected correctly when it gets changed by other means (like clicking in the article, mark all as read, mark-as-read from the context menu).
 
 Any additional issues, problems or feature request can be found or made in the GitHub [issue tracker](https://github.com/Elv1zz/ttrss_plugin-markasread/issues).
 
