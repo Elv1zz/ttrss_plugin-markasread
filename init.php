@@ -5,11 +5,12 @@ class MarkAsRead extends Plugin {
 	private $host;
 
 	function about() {
-		return array(0.1,
+		return array(
+			0.2,
 			"Google Reader like 'Mark as read' checkbox",
 			"Elvizz", 
-			false
-			# "http://example.com"
+			false,
+			"https://github.com/Elv1zz/ttrss_plugin-markasread"
 		);
 	}
 
@@ -20,19 +21,20 @@ class MarkAsRead extends Plugin {
 		$host->add_hook($host::HOOK_ARTICLE_BUTTON, $this);
 	}
 
-	/* function get_js() {
-		return file_get_contents(dirname(__FILE__) . "/mail.js");
-	} */
+	function get_js() {
+		return file_get_contents(dirname(__FILE__) . "/markasread.js");
+	}
+
+	function get_css() {
+		return file_get_contents(dirname(__FILE__) . "/markasread.css");
+	}
 
 	function hook_article_button($line) {
 		$myId = $line["id"];
-		$alreadyRead = 'checked';
-		if ($line["unread"] == "t" || $line["unread"] == "1") {
-			$alreadyRead = '';
-		}
-		return "<span onclick='javascript:toggleUnread($myId);' style='cursor: pointer; vertical-align: bottom;'><input id='articleread-$myId' type='checkbox' $alreadyRead> ".__('Mark as read')."</span>";
-		# class='dijitReset dijitCheckBoxInput' role='checkbox'
+
+		return "<span style='cursor: pointer; vertical-align: bottom;' onclick='markasreadClicked($myId);'><span style='min-width: 15px; min-height: 15px;' class='markasread'><img src='plugins/markasread/trans.png' class='tagsPic' width=15 height=15 /></span>".__('Mark as read')."</span>";
 	}
+
 }
 ?>
 
