@@ -1,7 +1,6 @@
 <?php
 class MarkAsRead extends Plugin {
 
-	private $link;
 	private $host;
 
 	function about() {
@@ -15,12 +14,15 @@ class MarkAsRead extends Plugin {
 	}
 
 	function init($host) {
-		$this->link = $host->get_link();
 		$this->host = $host;
 
 		$host->add_hook($host::HOOK_ARTICLE_BUTTON, $this);
 	}
-
+	
+	function api_version() {
+		return 2;
+	}
+	
 	function get_js() {
 		return file_get_contents(dirname(__FILE__) . "/markasread.js");
 	}
