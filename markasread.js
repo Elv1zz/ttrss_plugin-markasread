@@ -1,4 +1,4 @@
-function markasreadClicked(articleId) {
+function markasreadClicked(evt, articleId) {
 	try {
 		// turn off "event bubbling" for this click.
 		// this is to avoid toggling the Unread state twice
@@ -7,7 +7,7 @@ function markasreadClicked(articleId) {
 		// (onclick of the row only marks the article as read, 
 		//  not unread again)
 		// code from: http://www.quirksmode.org/js/events_order.html
-		if (!e) var e = window.event;
+		var e = evt || window.event;
 		e.cancelBubble = true;
 		if (e.stopPropagation) e.stopPropagation();
 

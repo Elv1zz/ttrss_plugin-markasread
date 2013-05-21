@@ -27,6 +27,17 @@ $ cp ttrss_plugin-markasread-master/* /path/to/your/tt-rss/plugins/markasread
 
 Then go to tt-rss preferences and enable the plugin.
 
+Update
+------
+Just pull the most recent version from the server:
+
+```sh
+$ cd /path/to/your/tt-rss/plugins/markasread
+$ git pull origin master
+```
+
+and you are done. 
+
 Current status
 --------------
 This version of the plugin is fully working: Marking articles as read and unread works correctly. Also the unread status is reflected correctly when it gets changed by other means (like clicking in the article, mark all as read, mark-as-read from the context menu).
@@ -40,8 +51,8 @@ Browser compatibility:
 | ---------------- | --------- | -------- |
 | Chromium         | 26        | works    |
 | Epiphany         | 2.30      | works    |
-| FireFox          |           | untested |
-| Internet Explorer|           | untested |
+| FireFox          | 17        | works    |
+| Internet Explorer| 8         | works    |
 | Opeara           |           | untested |
 | Safari           |           | untested |
 
