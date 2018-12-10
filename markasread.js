@@ -14,7 +14,7 @@ function markasreadClicked(evt, articleId) {
 		// toggle the articles unread state
 		//  Unread will become Read
 		//  Read will become Unread
-		toggleUnread(articleId);
+		Headlines.toggleUnread(articleId);
 
 	} catch (except) {
 		exception_error("markasreadClicked", except);
