@@ -53,10 +53,10 @@ Browser compatibility:
 | Epiphany         | 2.30      | works    |
 | FireFox          | 17        | works    |
 | Internet Explorer| 8         | works    |
-| Opeara           |           | untested |
-| Safari           |           | untested |
+| Opera            |           | untested |
+| Safari           | 12        | works    |
 
 Copyright
 ---------
-Elv1zz (Elvizz), 2013
+Elv1zz (Elvizz), 2013-2018
 
