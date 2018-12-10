@@ -5,7 +5,7 @@ class MarkAsRead extends Plugin {
 
 	function about() {
 		return array(
-			0.2,
+			0.3,
 			"Google Reader like 'Mark as read' checkbox",
 			"Elvizz", 
 			false,
