@@ -58,5 +58,5 @@ Browser compatibility:
 
 Copyright
 ---------
-Elv1zz (Elvizz), 2013-2018
+Elv1zz (Elvizz), 2013-2022
 
