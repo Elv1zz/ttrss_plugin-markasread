@@ -34,7 +34,7 @@ class MarkAsRead extends Plugin {
 	function hook_article_button($line) {
 		$myId = $line["id"];
 
-		return "<span style='cursor: pointer; vertical-align: bottom;' onclick='markasreadClicked(event,$myId);'><span style='min-width: 15px; min-height: 15px;' class='markasread'><img src='plugins/markasread/trans.png' class='tagsPic' width=15 height=15 /></span>".__('Mark as read')."</span>";
+		return "<span style='cursor: pointer; vertical-align: bottom;' onclick='markasreadClicked(event,$myId);'><span style='min-width: 15px; min-height: 15px;' class='markasread'><img src='plugins/markasread/trans.png' class='tagsPic' width='15' height='15' /></span>".__('Mark as read')."</span>";
 	}
 
 }
