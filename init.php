@@ -28,13 +28,13 @@ class MarkAsRead extends Plugin {
 	}
 
 	function get_css() {
-		return file_get_contents(dirname(__FILE__) . "/markasread.css");
+		return str_replace("url(/markasread", "url(" . basename(dirname(__FILE__, 2)) . "/markasread", file_get_contents(dirname(__FILE__) . "/markasread.css"));
 	}
 
 	function hook_article_button($line) {
 		$myId = $line["id"];
 
-		return "<span style='cursor: pointer; vertical-align: bottom;' onclick='markasreadClicked(event,$myId);'><span style='min-width: 15px; min-height: 15px;' class='markasread'><img src='plugins/markasread/trans.png' class='tagsPic' width='15' height='15' /></span>".__('Mark as read')."</span>";
+		return "<span style='cursor: pointer; vertical-align: bottom;' onclick='markasreadClicked(event,$myId);'><span style='min-width: 15px; min-height: 15px;' class='markasread'><img src='" . basename(dirname(__FILE__, 2)) . "/markasread/trans.png' class='tagsPic' width='15' height='15' /></span>".__('Mark as read')."</span>";
 	}
 
 }

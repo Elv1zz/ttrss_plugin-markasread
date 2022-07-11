@@ -1,10 +1,10 @@
 .markasread {
-	background-image: url(plugins/markasread/read.png);
+	background-image: url(/markasread/read.png);
 	background-repeat: no-repeat;
 }
 
 .Unread .markasread {
-	background-image: url(plugins/markasread/unread.png);
+	background-image: url(/markasread/unread.png);
 	background-repeat: no-repeat;
 }
 
