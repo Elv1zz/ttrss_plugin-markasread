@@ -6,11 +6,11 @@ Installation
 ------------
 
 ### Using git ###
-Just checkout the code into your plugins folder like this:
+Just checkout the code into your plugins.local folder like this:
 
 ```sh
 $ cd /path/to/your/tt-rss
-$ git clone git://github.com/Elv1zz/ttrss_plugin-markasread plugins/markasread
+$ git clone git://github.com/Elv1zz/ttrss_plugin-markasread plugins.local/markasread
 ```
 
 Then go to tt-rss preferences and enable the plugin.
@@ -21,8 +21,8 @@ Manually download, extract and copy the archive like this:
 $ cd /tmp
 $ wget https://github.com/Elv1zz/ttrss_plugin-markasread/archive/master.zip
 $ unzip master.zip
-$ mkdir /path/to/your/tt-rss/plugins/markasread
-$ cp ttrss_plugin-markasread-master/* /path/to/your/tt-rss/plugins/markasread
+$ mkdir /path/to/your/tt-rss/plugins.local/markasread
+$ cp ttrss_plugin-markasread-master/* /path/to/your/tt-rss/plugins.local/markasread
 ```
 
 Then go to tt-rss preferences and enable the plugin.
@@ -32,7 +32,7 @@ Update
 Just pull the most recent version from the server:
 
 ```sh
-$ cd /path/to/your/tt-rss/plugins/markasread
+$ cd /path/to/your/tt-rss/plugins.local/markasread
 $ git pull origin master
 ```
 
