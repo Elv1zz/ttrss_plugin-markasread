@@ -28,7 +28,7 @@ class MarkAsRead extends Plugin {
 	}
 
 	function get_css() {
-		return str_replace("url(/markasread", "url(" . basename(dirname(__FILE__, 2)) . "/markasread", file_get_contents(dirname(__FILE__) . "/markasread.css"));
+		return str_replace("BASEPATH", basename(dirname(__FILE__, 2)), file_get_contents(dirname(__FILE__) . "/markasread.css"));
 	}
 
 	function hook_article_button($line) {
