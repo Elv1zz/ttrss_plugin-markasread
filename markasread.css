@@ -1,10 +1,10 @@
 .markasread {
-	background-image: url(BASEPATH/markasread/read.png);
+	background-image: url(BASEPATH/markasread/unchecked.png);
 	background-repeat: no-repeat;
 }
 
 .Unread .markasread {
-	background-image: url(BASEPATH/markasread/unread.png);
+	background-image: url(BASEPATH/markasread/checked.png);
 	background-repeat: no-repeat;
 }
 
