@@ -1,6 +1,6 @@
 "Mark as read" plugin for tt-rss
 ================================
-This plugin for Tiny Tiny RSS (tt-rss) adds a checkbox in the article footer to mark an article as read and unread just like in discontinued Google Reader.
+This plugin for Tiny Tiny RSS (tt-rss) adds a checkbox in the article footer to mark an article as unread and read just like in discontinued Google Reader.
 
 Installation
 ------------
